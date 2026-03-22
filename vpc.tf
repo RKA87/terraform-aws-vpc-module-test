@@ -1,6 +1,5 @@
 module "roboshop_vpc" {
   source = "git::https://github.com/RKA87/terraform-aws-vpc.git?ref=main"
-  region = var.region
   environment = var.environment
   project = var.project
   vpc_tags = var.vpc_tags
