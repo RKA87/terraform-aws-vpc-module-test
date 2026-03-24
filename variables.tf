@@ -15,7 +15,7 @@ variable "vpc_tags" {
   type        = map(string)
   default     = {
     Owner = "Rakesh"
-    Date = "2024-06-21"
+    Date = "2024-06-24"
   }
 }
 
@@ -24,7 +24,7 @@ variable "igw_tags" {
   type        = map(string)
   default     = {
     Owner = "Rakesh"
-    Date = "2024-06-21"
+    Date = "2024-06-24"
   }
 }
 
@@ -33,7 +33,7 @@ variable "pub_subnet_tags" {
   type        = map(string)
   default     = {
     Owner = "Rakesh"
-    Date = "2024-06-21"
+    Date = "2024-06-24"
   }
 }
 
@@ -42,7 +42,7 @@ variable "pvt_subnet_tags" {
   type        = map(string)
   default     = {
     Owner = "Rakesh"
-    Date = "2024-06-21"
+    Date = "2024-06-24"
   }
 }
 
@@ -51,6 +51,29 @@ variable "db_subnet_tags" {
   type        = map(string)
   default     = {
     Owner = "Rakesh"
-    Date = "2024-06-21"
+    Date = "2024-06-24"
   }
+}
+
+variable "nat_gateway_tags" {
+  description = "Additional tags to apply to the NAT Gateway."
+  type        = map(string)
+  default     = {
+    Owner = "Rakesh"
+    Date = "2024-06-24"
+  }
+}
+
+variable "peering_tags" {
+  description = "Additional tags to apply to the VPC peering connection."
+  type        = map(string)
+  default     = {
+    Owner = "Rakesh"
+    Date = "2024-06-24"
+  }
+}
+
+variable "create_perring"{
+  type = bool
+  default = false
 }
